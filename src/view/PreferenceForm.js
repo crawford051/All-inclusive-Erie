@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const PreferenceForm = () => {
   const [wheelchair, setWheelchair] = useState(false);
   const [closeParking, setCloseParking] = useState(false);
   const [braille, setBraille] = useState(false);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
     // Handle form submission logic (send preferences to the server)
@@ -32,7 +32,7 @@ const PreferenceForm = () => {
       .then(data => {
         console.log('Preferences submitted successfully', data);
         // Redirect to the success page
-        history.push('/success');
+        navigate.push('/success');
       })
       .catch(error => {
         console.error('Error submitting preferences', error);
