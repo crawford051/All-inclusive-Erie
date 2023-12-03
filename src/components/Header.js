@@ -30,7 +30,7 @@ function Header() {
   };
 
   return (
-    <header>
+    <header style={{ backgroundColor: 'black'}}>
       <a href="Home.html"><img src={logo} alt="Logo" id="logo" /></a>
       <br />
       <div style={{ position: 'absolute', bottom: '630px', right: '2px' }}>

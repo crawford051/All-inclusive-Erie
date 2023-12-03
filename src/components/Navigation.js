@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
-    <nav>
-        // Inside Navigation.js or wherever your navigation links are defined
+    <nav style={{ backgroundColor: 'black'}}>
         <ul>
          <li>
              <Link to="/">Home</Link>
@@ -17,6 +16,9 @@ function Navigation() {
         </li>
         <li>
           <Link to="/settings">Settings</Link>
+        </li>
+        <li>
+          <Link to="/PreferenceForm">PreferenceForm</Link>
         </li>
   {/* Add more navigation items as needed */}
 </ul>

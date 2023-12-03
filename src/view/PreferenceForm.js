@@ -41,28 +41,39 @@ const PreferenceForm = () => {
   };
 
   return (
-    <div>
-      <h2>Preference Form</h2>
-      <form>
-        <label>
-          <input type="checkbox" checked={wheelchair} onChange={() => setWheelchair(!wheelchair)} />
-          Wheelchair Accessibility
-        </label>
+    <div style={{ backgroundColor: 'white', padding: '20px', borderRadius: '8px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
+      <h1>Preference Form</h1>
+      <table align="center">
+        <tbody>
+          <tr>
+            <td>
+              <label>
+                <input type="checkbox" checked={wheelchair} onChange={() => setWheelchair(!wheelchair)} />
+                Wheelchair Accessibility
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>
+                <input type="checkbox" checked={closeParking} onChange={() => setCloseParking(!closeParking)} />
+                Close Parking Spot
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>
+                <input type="checkbox" checked={braille} onChange={() => setBraille(!braille)} />
+                Braille Support
+              </label>
+            </td>
+          </tr>
+          {/* Add more preferences as needed */}
+        </tbody>
+      </table>
 
-        <label>
-          <input type="checkbox" checked={closeParking} onChange={() => setCloseParking(!closeParking)} />
-          Close Parking Spot
-        </label>
-
-        <label>
-          <input type="checkbox" checked={braille} onChange={() => setBraille(!braille)} />
-          Braille Support
-        </label>
-
-        {/* Add more preferences as needed */}
-      </form>
-
-      <button onClick={handleSubmit}>Submit Preferences</button>
+      <button onClick={handleSubmit} class="auth-button">Submit Preferences</button>
     </div>
   );
 };
