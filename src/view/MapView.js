@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import MapComponent from '../components/MapComponent'; 
 //import './MapView.css'; 
+
 const MapView = () => {
   return (
     <div className="map-view-container">

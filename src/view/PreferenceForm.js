@@ -73,7 +73,9 @@ const PreferenceForm = () => {
         </tbody>
       </table>
 
-      <button onClick={handleSubmit} class="auth-button">Submit Preferences</button>
+      <a href="/PreferencesSet">
+        <button onClick={handleSubmit} class="auth-button">Submit Preferences</button>
+      </a>
     </div>
   );
 };

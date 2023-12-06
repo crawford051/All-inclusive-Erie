@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 import MapView from './view/MapView';
 import Authentication from './view/Authentication';
 import PreferenceForm from './view/PreferenceForm';
+import SuccessPage from './view/SuccessPage';
+import PreferencesSet from './view/PreferencesSet';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/map" element={<MapView />} />
           <Route path="/authentication" element={<Authentication/>}/>
           <Route path="/PreferenceForm" element={<PreferenceForm />} />
+          <Route path="/SuccessPage" element={<SuccessPage />} />
+          <Route path="/PreferencesSet" element={<PreferencesSet />} />
         </Routes>
         <Footer />
       </Router>

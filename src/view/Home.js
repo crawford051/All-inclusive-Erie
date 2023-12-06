@@ -2,7 +2,6 @@
 import React from 'react';
 import MapImage from '../Images/Map of Erie PA.png';
 
-
 function Home() {
   return (
     <div id="mapContainer" style={{ position: 'relative' }}>
@@ -53,7 +52,7 @@ function Home() {
         </table>
 
         <aside className="tablet-desktop grid-item4">
-          <a href="authentication.html">
+          <a href="/authentication">
             <button type="button">Log In</button>
           </a>
         </aside>
