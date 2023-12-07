@@ -90,13 +90,13 @@ button.small-button:hover {
 }
 
 button.small-button-2 {
-  background-color: lightblue;
-  font-size: 15% of the original size; /* Adjust the font size as needed */
-  padding: 1.2px 2px; /* Adjust the padding to make it 15% of the original size */
-  border: 4px solid darkblue; /* Adjust the border size accordingly */
-  width: 100%; /* Make the width 15% of the parent container */
-  float: right; /* Align the button to the right */
-  border-radius: 8px; /* Add border-radius for rounded edges */
+  background-color: white;
+  font-size: 15% of the original size; 
+  padding: 1.2px 2px; 
+  border: 4px solid darkblue;
+  width: 50%; 
+  float: center; 
+  border-radius: 8px; 
 }
 
 button.small-button-2:hover {
@@ -108,12 +108,12 @@ button.small-button-2:hover {
 
 button.no-yes-button {
   background-color: lightblue;
-  font-size: 15% of the original size; /* Adjust the font size as needed */
-  padding: 1.2px 1.5px; /* Adjust the padding to make it 15% of the original size */
-  border: 4px solid darkblue; /* Adjust the border size accordingly */
-  width: 100%; /* Make the width 15% of the parent container */
-  float: right; /* Align the button to the right */
-  border-radius: 8px; /* Add border-radius for rounded edges */
+  font-size: 15% of the original size; 
+  padding: 1.2px 1.5px;
+  border: 4px solid darkblue; 
+  width: 100%; 
+  float: right; 
+  border-radius: 8px; 
 }
 
 button.no-yes-button:hover {
